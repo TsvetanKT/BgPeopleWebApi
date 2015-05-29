@@ -17,7 +17,7 @@ BgPeopleWebApi is ASP.NET REST Server with Entity Framework Code First database
 *	`http://localhost:11647/api/BgPersonModels/GetBgPersonModes/6` - (GET) -  Show one with `Id = 6`.
 *	`http://localhost:11647/api/BgPersonModels/DeleteBgPersonModel/10` - (DELETE) - Delete the person with `Id = 10`.
 *	`http://localhost:11647/api/BgPersonModels/PutBgPersonModel/9` - (PUT) - Edit person with Id = 9 (Requires JSON body example):
-```
+```javascript
 {
     "FirstName": "Симона",
     "MiddleName": "Тодорова",
@@ -32,11 +32,12 @@ BgPeopleWebApi is ASP.NET REST Server with Entity Framework Code First database
 *	`http://localhost:11647/api/BgPersonModels/PostBgPersonModel` - (POST) - Add a person (Requires JSON body as above).
 *	`http://localhost:11647/api/BgPersonModels/DeleteAll` - (DELETE) - Delete all people in the database.
 *	`http://localhost:11647/api/BgPersonModels/PostRange` - (POST) - Generates a number of random people with [BgPersonGenerator library](https://github.com/TsvetanKT/BgPersonGenerator) (Requires JSON body example):
-```
+```javascript
 {
     "NumberOfPeople": 25,
     "MinAge": 1,
     "MaxAge": 100,
     "TranslateToEnglish": false,
     "Unique": false
-}```
+}
+```
